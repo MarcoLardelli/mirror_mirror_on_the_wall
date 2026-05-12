@@ -61,8 +61,8 @@ for e in range(NO_OF_EPISODES):
                     fashion = min(fashion, 0.1 * distance/EPSILON)  # limit to avoid overshooting! (just to be safe here)
                     person['desired_features'] += EPSILON * fashion * direction
 
-                # 3. UPDATE of avg_desired of the incluencer with the desire of the person
-                # this must be done after 2. so this rating does not influence 2.
+                # 3. Update of avg_desired of the target with the desire of the person
+                # (this must be done after 2. so this rating does not influence 2.)
                 n = target['n_desirers']
                 target['avg_desired'] = (n * target['avg_desired'] + desire) / (n + 1)
                 target['n_desirers'] += 1
