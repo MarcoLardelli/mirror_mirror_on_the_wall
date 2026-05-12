@@ -1,5 +1,5 @@
 # mirror_mirror_on_the_wall
-##A hobbyist experiment in computational sociodynamics
+## A hobbyist experiment in computational sociodynamics
 
 Visit my blog for more information:
 
