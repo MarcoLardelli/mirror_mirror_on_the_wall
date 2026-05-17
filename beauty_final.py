@@ -42,7 +42,7 @@ for e in range(NO_OF_EPISODES):
             target = random.choice(population)
             if person['sex'] != target['sex'] and person['id'] != target['id']: # one can not rate oneself!
                 # 1. Calculate how attractive the person finds the target
-                # how far apart are the person's desired_features and the influencer's features?
+                # how far apart are the person's desired_features and the target's features?
                 distance = np.linalg.norm(target['features']-person['desired_features'])
                 if distance == 0:  # this is rare but makes big trouble!
                     break  # we leave it!
